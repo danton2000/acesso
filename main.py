@@ -24,6 +24,4 @@ def usuarios(nome_usuario):
         return render_template("acesso.html", nome_usuario = nome_usuario)
             
     else:
-        return """
-            <h1>Acesso negado!</h1>
-        """
+        return render_template("acesso.html", nome_usuario)
