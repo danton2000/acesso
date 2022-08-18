@@ -5,6 +5,10 @@
         <title>Usuário</title>
     </head>
     <body>
-        <h1> Usuário: {{nome_usuario}} </h1>
+        {% if nome_usuarios != None %}
+            <h1> Usuário: {{nome_usuario}} </h1>
+        {% else %}
+            <h1> Olá convidado </h1>
+        {% endif %}
     </body>
 </html>
